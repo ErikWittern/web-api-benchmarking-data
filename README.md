@@ -1,10 +1,10 @@
 # Web API Benchmarking Data
 
-The here presented data (contained in `data.zip` reflects measured qualities for 15 Web API endpoints.
+The here presented data (contained in `data.zip`) reflects measured qualities for 15 Web API endpoints.
 The collection and analysis of this data has been published in the research paper "Benchmarking Web API Quality", presented at the 2016 International Conference on Web Engineering (ICWE '16).
 
 ## Data description
-The data has been collected over a period of 3 months, from August 20th, 2015 (16:00h CEST) until November 20th (16:00 CEST).
+The data has been collected over a period of 3 months, from August 20th, 2015 (16:00h CEST) until November 20th, 2015 (16:00 CEST).
 The data was collected for the following Web API endpoints:
 
 |API name           | Ping | HTTP | HTTPS | URL                                                                                                                                                                                                                                          |
@@ -30,8 +30,8 @@ For every region, the data consists of 4 files:
 
 * `httpget_output.csv` contains data about performing an HTTP GET request to each endpoint every 5 minutes. Per request, the timestamp, the HTTP status code, the latency in milliseconds, and the response size in byte are stated. 
 * `httpgets_output.csv` contains data about performing an HTTPS GET request to each endpoint every 5 minutes. Per request, the timestamp, the HTTP status code, the latency in milliseconds, and the response size in byte are stated.
-* `ping_output.csv` contains data about performing a ping request (using the ICMP protocol) to each endpoint every 5 minutes. Per request, the timestamp at the beginning and end of the request are contained. The pingability measure denotes how many of 5 subsequent ping requests succeeded. Finally, we provide the average latency across the 5 ping requests.
-* `errors.log` contains logged error messages in case that HTTP or HTTPS GET requests failed. They can be correlated to the other HTTP and HTTPS request data by means of the invoked endpoint and the timestamp.
+* `ping_output.csv` contains data about performing ping requests (using the ICMP protocol) to each endpoint every 5 minutes. Per request, the timestamp at the beginning and end of the request period are contained. The pingability denotes how many of 5 ping requests, which followed one another immediately, succeeded. Finally, we provide the average latency across the 5 ping requests.
+* `errors.log` contains logged error messages in case that HTTP or HTTPS GET requests failed. The error log entries can be correlated to the other HTTP and HTTPS request data by means of the invoked endpoint and the timestamp.
 
 
 ## Web API anonymization
