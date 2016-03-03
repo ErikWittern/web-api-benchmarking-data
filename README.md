@@ -2,6 +2,7 @@
 
 The here presented data (contained in `data.zip`) reflects measured qualities for 15 Web API endpoints.
 The collection and analysis of this data has been published in the research paper "Benchmarking Web API Quality", presented at the 2016 International Conference on Web Engineering (ICWE '16).
+We also published the tools to collect such data [here](https://github.com/dbermbach/web-api-bench).
 
 ## Data description
 The data has been collected over a period of 3 months, from August 20th, 2015 (16:00h CEST) until November 20th, 2015 (16:00 CEST).
@@ -10,14 +11,14 @@ The data was collected for the following Web API endpoints:
 |API name           | Ping | HTTP | HTTPS | URL                                                                                                                                                                                                                                          |
 |-------------------|------|------|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Flickr             | X    | X    | X     | api.flickr.com/services/feeds/photos_public.gne                                                                                                                                                                                              |
-|OpenWeatherMap     | X    | X    | -     | api.openweathermap.org/data/2.5/weather?q=New\%20York,us                                                                                                                                                                                     |
+|OpenWeatherMap     | X    | X    | -     | api.openweathermap.org/data/2.5/weather?q=New%20York,us                                                                                                                                                                                     |
 |Postcodes.io       | X    | X    | X     | api.postcodes.io/postcodes/GU50BD                                                                                                                                                                                                            |
 |ConsumerFinance    | X    | X    | X     | data.consumerfinance.gov/api/views/fphp-cr5a/rows.json                                                                                                                                                                                       |
 |Police.uk.co       | -    | X    | X     | data.police.uk/api/crimes-street-dates                                                                                                                                                                                                       |
 |Wikipedia          | X    | X    | X     | en.wikipedia.org/w/api.php?action=query\&titles=Albert_Einstein\&prop=images\&format=json                                                                                                                                                    |
 |Apple iTunes       | X    | X    | X     | itunes.apple.com/search?term=u2\&entity=musicVideo                                                                                                                                                                                           |
-|Google Maps        | X    | X    | X     | maps.googleapis.com/maps/api/geocode/json?address=New\%20York\%20City\%20US\&sensor=false                                                                                                                                                    |
-|MusicBrainz        | X    | X    | X     | musicbrainz.org/ws/2/recording?query=\%22we\%20will\%20rock\%20you\%22\%20AND\%20arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3                                                                                                                   |
+|Google Maps        | X    | X    | X     | maps.googleapis.com/maps/api/geocode/json?address=New%20York%20City%20US&sensor=false                                                                                                                                                    |
+|MusicBrainz        | X    | X    | X     | musicbrainz.org/ws/2/recording?query=%22we%20will%20rock%20you%22%20AND%20arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3                                                                                                                   |
 |Yahoo              | X    | X    | X     | query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys |
 |Amazon S3          | -    | X    | X     | s3.amazonaws.com/1000genomes                                                                                                                                                                                                                 |
 |Twitter            | X    | X    | -     | urls.api.twitter.com/1/urls/count.json?url=http://www.tu-berlin.de                                                                                                                                                                           |
@@ -41,3 +42,20 @@ Thus, in order to not suggest poor performance of specific providers, we chose t
 Correspondingly, APIs are randomly assigned with the names `api_1` to `api_15`.
 Upon reasonable request, we will consider providing a mapping between the random names and the actual API endpoints.
 Please contact us under [witternj@us.ibm.com](mailto:witternj@us.ibm.com) or [david.bermbach@tu-berlin.de](mailto:david.bermbach@tu-berlin.de).
+
+## Usage and license
+If you use this data for research purposes with a resulting publication, we would appreciate if you cite our paper:
+```TeX
+@inproceedings{bermbach_wittern_web_api_bench,
+ author = {David Bermbach and Erik Wittern},
+ title = {Benchmarking Web API Quality},
+ booktitle = {Proceedings of the 16th International Conference on Web Engineering (ICWE2016)},
+ series = {ICWE'16},
+ year = {2016},
+ publisher = {Springer}
+}
+```
+
+License: Creative Commons Attribution 4.0 International
+Human Readable License: http://creativecommons.org/licenses/by/4.0/
+Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
