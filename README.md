@@ -56,6 +56,6 @@ If you use this data for research purposes with a resulting publication, we woul
 }
 ```
 
-License: Creative Commons Attribution 4.0 International
-Human Readable License: http://creativecommons.org/licenses/by/4.0/
-Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
+* License: Creative Commons Attribution 4.0 International
+* Human Readable License: http://creativecommons.org/licenses/by/4.0/
+* Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
